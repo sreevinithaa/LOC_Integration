@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library of congress search engine</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+        <div id="Searchpanel" class="card">
+            <h3 class="card-header text-uppercase">Library of congress search engine</h3>
+            <form id="user-form" class="card-body">
+                <div class="row">
+                    <label for="exampleFormControlInput1" class="form-label">Keyword</label>
+                    <input type="text" class="form-control" id="txtkeyword"
+                        placeholder="Search">
+                </div>
+                <div class="row">
+                    <label for="exampleFormControlInput1" class="form-label">Format</label>
+                    <select class="form-control" id="selectformat" aria-label="Default select example">
+                        <option value="" selected>All format</option>
+                        <option value="maps">maps</option>
+                        <option value="audio">audio</option>
+                        <option value="photos">photos</option>
+                        <option value="manuscripts">manuscripts</option>
+                        <option value="newspapers">newspapers</option>
+                        <option value="film-and-videos">film-and-videos</option>
+                        <option value="notated-music">notated-music</option>
+                        <option value="websites">websites</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn_green">Click Me</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
