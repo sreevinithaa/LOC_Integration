@@ -75,6 +75,16 @@ section
 .result-detail
 {
 margin-top: 10px;
+max-height: 8rem;
+}
+.result-detail-des
+{
+margin-top: 10px;
+max-height: 4rem;
+overflow: hidden;
+}
+.result-detail-more-mode {
+  max-height: initial;
 }
 #Searchpanel
 {

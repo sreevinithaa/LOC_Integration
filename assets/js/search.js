@@ -70,11 +70,24 @@ var LoadGrid = function (data) {
     data5.classList = "result-detail";
     data5.textContent = `Subject : ${data[i].subject}`;
     var data6 = document.createElement("div");
-    data6.classList = "result-detail";
+    data6.classList = "result-detail-des";
     data6.textContent = `Description : ${data[i].description}`;
     var button = document.createElement("button");
     button.classList = "btn btn_yellow";
     button.textContent = "Read More";
+    button.addEventListener("click", function (event) {
+      console.log( event.target.previousSibling.classList);
+      if(event.target.previousSibling.classList.contains("result-detail-des"))
+     { event.target.previousSibling.classList.remove("result-detail-des");
+      event.target.previousSibling.classList.add("result-detail-more-mode")
+      event.target.textContent="Read Less";
+    }
+    else{
+      event.target.previousSibling.classList.remove("result-detail-more-mode");
+      event.target.previousSibling.classList.add("result-detail-des")
+      event.target.textContent="Read More";
+    }
+    });
     data2.appendChild(data3);
     data2.appendChild(data4);
     data2.appendChild(data5);
@@ -98,4 +111,5 @@ var keyword = url.searchParams.get("keyword");
 selectformat.value = format;
 txtkeyword.value = keyword;
 InitLoadPAge();
+
 // userFormEl.submit();
