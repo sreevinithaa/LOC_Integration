@@ -98,7 +98,7 @@ var LoadGrid = function (data) {
   }
 };
 function fucGoBack() {
-  window.location.href = location.protocol + "//" + location.host;
+  window.location.href = "./index.html";
   return;
 }
 
