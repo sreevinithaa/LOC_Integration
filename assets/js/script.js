@@ -8,7 +8,7 @@ var formSubmitHandler = function (event) {
     var keyword = txtkeyword.value.trim();
   
     if (keyword) {
-     var url=`/Search.html?keyword=${keyword}&Format=${selectformat.value}`;
+     var url=`./Search.html?keyword=${keyword}&Format=${selectformat.value}`;
      window.location.replace(url);
     
     } else {
